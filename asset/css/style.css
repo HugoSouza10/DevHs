@@ -186,7 +186,7 @@ body{
 
 
 
-/*Main conteúdo*/
+/*Main section sobre*/
 /*icones social padrão*/
 .social {
     margin-top: 30px;
@@ -202,7 +202,7 @@ body{
     margin-right: 30px;
 }
 
-.about{
+#about{
     max-width: 100%;
     background-color: #17161B;
     color: white;
@@ -218,7 +218,7 @@ body{
     text-transform: uppercase;
 }
 
-.main_about .borda{
+.borda{
     width:50px;
     height:4px;
     margin-top: -10px;
@@ -227,22 +227,20 @@ body{
 }
 
 /*Button download cv*/
-.button_cv{
+.button_radiuns{
     padding-bottom: 10px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
-.button_cv a{
+.button_radiuns a{
     text-decoration: none;
     text-transform: uppercase;
     color:white;
     background-color:#FF6F00;
-    padding: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 15px;
     border-radius: 20px;
 }
 
-.button_cv a:hover{
+.button_radiuns a:hover{
     transition: 0.5s ease;
     background-color:#9b490a ;
 }
@@ -270,3 +268,86 @@ body{
     margin-top: 10px;
 }
 
+
+
+/*section services*/
+
+#services{
+    width: 100%;
+    background-image: url('../imagens/background_services.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.services_content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 45px;
+    margin-top: 120px;
+    padding-bottom:100px;
+}
+
+
+.services_title{
+    line-height: 40px;
+}
+
+.main_services{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding-top: 100px;
+}
+
+#button_tile{
+    border: none;
+    background-color: #FF6F00;
+    color: white;
+    padding: 10px;
+    padding-right:71px;
+    padding-left: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+}
+
+.orcamento{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 70px;
+    
+}
+
+.services_title h1,h2{
+    color: white;
+    text-transform: uppercase;
+}
+.services_title h2{
+    letter-spacing: 7px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+
+.bloco_service {
+    max-width: 300px;
+    text-align: center;
+    color: white;
+    border: 2px solid #FF6F00;
+    border-radius: 20px;
+    padding: 30px;
+}
+/*icones services*/
+
+.services_icone img{
+     max-width: 300px;
+}
+
+
+.img_services img{
+    width:70px;
+}
