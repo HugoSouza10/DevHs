@@ -553,7 +553,7 @@ h1{
 
     /*CABEÇALHO */
 
-    .container_info h1{
+    .main_info .container_info h1{
         font-size: 18pt;
     }
 
@@ -562,16 +562,37 @@ h1{
         letter-spacing: 9px;
     }
 
+
     .container_info h3{
         font-size: 15px;
     }
+
+    /*BODY*/
 
     .about_container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
 
+
+    .main_services{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
     .img_sobre img{
         max-width: 300px;
+    }
+
+    .services_title h1{
+        font-size: 26pt;
+    }
+
+    .services_title h2{
+        letter-spacing: 6px;
+    }
+
+    .text_info p{
+        font-size: 9pt;
     }
 }
