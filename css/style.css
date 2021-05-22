@@ -1,11 +1,37 @@
 @import url('https://fonts.googleapis.com/css2? family = Cabin: wght @ 400; 600; 700 & display = swap');
 
+
+/*FORMATAÇÕES GERAIS*/
 body{
     margin: 0;
     padding: 0;
     font-family:'Cabin', sans-serif;
    
 }
+
+h1{
+    font-size: 20pt;
+}
+
+#button_tile{
+    border: none;
+    background-color: #FF6F00;
+    color: white;
+    padding: 10px;
+    padding-right:71px;
+    padding-left: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 18pt;
+    text-transform: uppercase;
+    
+}
+
+.text_info{
+    text-align: justify;
+}
+
+
 
 /*COR BARRA DE ROLAGEM*/
 
@@ -177,6 +203,8 @@ body{
     color:#FF6F00;
 }
 
+
+
 /*icones*/
 
 .main-header-container ul span img{
@@ -289,6 +317,11 @@ body{
     padding-bottom:100px;
 }
 
+.bloco_service p{
+    font-size: 15px;
+    text-align: center;
+}
+
 
 .services_title{
     line-height: 40px;
@@ -299,21 +332,9 @@ body{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     padding-top: 100px;
+    gap: 250px;
 }
 
-#button_tile{
-    border: none;
-    background-color: #FF6F00;
-    color: white;
-    padding: 10px;
-    padding-right:71px;
-    padding-left: 30px;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    font-size: 18px;
-    text-transform: uppercase;
-    
-}
 
 .orcamento{
     width: 100%;
@@ -344,10 +365,204 @@ body{
 /*icones services*/
 
 .services_icone img{
-     max-width: 300px;
+     max-width: 100%;
 }
 
 
 .img_services img{
     width:70px;
+}
+
+
+
+
+
+
+/*SEÇÕES PROCESSO DE CRIAÇÃO*/
+
+.main_widget{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 100px;
+    align-items: center;
+}
+
+
+.widget_left h1{
+    text-transform: uppercase;
+}
+
+.widget_left .widget_right, .text_info{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.widget_main_pontos{
+    display: flex;
+    letter-spacing: 50px;
+    color: #FF6F00;
+    
+}
+
+.widget_ponto{
+    font-size: 22px;
+}
+
+
+
+#creative_process{
+    background-color:#17161B;
+    color: white;
+}
+
+.creative_process .main_container  h1{
+    text-align: center;
+    margin: 0;
+}
+/*TITULO MAIN*/
+
+
+
+.block_text_process{
+    text-align: center;
+    padding-top: 100px;
+}
+.block_text_process h1{
+    text-align: center;
+    margin: 0;
+   
+}
+
+.block_text_process span{
+    margin: auto;
+    margin-top: 20px;
+}
+
+.titulo_process{
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+/*REPONSIVIDADE*/
+
+
+@media (max-width: 1024px){
+    .main_container{
+        padding: 50px;
+    }
+
+    .left_photo img{
+        max-width: 250px;
+    }
+
+    .services_content{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .services_title{
+        display: grid;
+        justify-content: center;
+    }
+
+    .services_icone{
+        display: grid;
+        justify-content: center;
+    }
+    
+
+}
+
+@media (max-width: 768px){
+    #main_menu{
+        display: none;
+    }
+
+    .main_about{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 31px;
+    }
+
+    .main_services{
+        gap: 0;
+    }
+
+   .text_title_sobre h1{
+       text-align: center;
+   }
+
+   .text_title_sobre .borda{
+       margin: auto;
+   }
+
+   .left_photo{
+       margin: auto;
+   }
+
+   
+
+   h1{
+       font-size: 18pt;
+   }
+
+   
+
+   .main_widget{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+   }
+
+   .widget_left, .widget_right{
+       text-align: center;
+   }
+
+   .widget_left  .text_info{
+       text-align: center;
+   }
+
+   .widget_right .text_info{
+       text-align: center;
+   }
+
+
+   .widget_left .borda{
+       display: none;
+   }
+
+   .widget_right .borda{
+        display: none;
+    }
+
+  #button_tile{
+      font-size: 20pt;
+      text-align: center;
+  }
+
+}
+
+
+@media (max-width: 450px){
+
+    /*CABEÇALHO */
+
+    .container_info h1{
+        font-size: 20pt;
+    }
+
+    .about_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .img_sobre img{
+        max-width: 300px;
+    }
 }
