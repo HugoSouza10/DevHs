@@ -557,6 +557,15 @@ h1{
         font-size: 18pt;
     }
 
+    .container_info h2:first-child{
+        font-size: 15px;
+        letter-spacing: 9px;
+    }
+
+    .container_info h3{
+        font-size: 15px;
+    }
+
     .about_container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
