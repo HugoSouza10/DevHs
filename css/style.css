@@ -480,7 +480,7 @@ h1{
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 812px){
     #main_menu{
         display: none;
     }
@@ -584,6 +584,11 @@ h1{
         max-width: 300px;
     }
 
+    /*Services*/
+
+    #button_tile{
+        font-size: 13pt;
+    }
     .services_title h1{
         font-size: 20pt;
     }
@@ -595,4 +600,20 @@ h1{
     .text_info p{
         font-size: 9pt;
     }
+
+    .bloco_service .button_radiuns{
+        font-size:10pt;
+    }
+
+    /*PROCESSO CREATE*/
+
+    .widget_main_pontos{
+        letter-spacing: 28px
+    }
+
+    .widget_right, .widget_left, img{
+        max-width:100%;
+    }
+
+
 }
