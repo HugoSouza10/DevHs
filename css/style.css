@@ -530,13 +530,15 @@ h1{
     .main_services, .borda{
         margin: auto;
     }
-
+    
 
     .services_icone img{
         max-width: 100%;
         margin: auto;
         margin-top: 30px;
     }
+
+   
 
     .about_container{
         display: grid;
@@ -680,7 +682,7 @@ h1{
     /*PROCESSO CREATE*/
 
     .widget_main_pontos{
-        letter-spacing: 28px
+        display: none;
     }
 
     .widget_right, .widget_left, img{
@@ -688,4 +690,45 @@ h1{
     }
 
 
+}
+
+@media (max-width: 320px){
+    /*header*/
+    .main_info .container_info h1{
+        font-size: 17pt;
+    }
+
+    .container_info h3{
+        display: none;
+    }
+
+    /*Body*/
+
+    p{
+        font-size: 12px;
+    }
+
+    
+
+    .block_text_process h1{
+        font-size: 23px;
+    }
+
+    /*sobre*/
+
+    .bloco_service p{
+        font-size: 12px;
+    }
+
+    .left_photo img{
+        max-width: 70%;
+    }
+
+    .left_photo{
+        text-align: center;
+    }
+
+    .img_sobre img{
+        max-width: 90%;
+    }
 }
