@@ -14,12 +14,13 @@ h1{
 }
 
 #button_tile{
+    max-width: 50%;
     border: none;
     background-color: #FF6F00;
     color: white;
+    text-align: center;
     padding: 10px;
-    padding-right:71px;
-    padding-left: 30px;
+
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     font-size: 18pt;
@@ -28,7 +29,7 @@ h1{
 }
 
 .text_info{
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -454,7 +455,7 @@ h1{
 
 @media (max-width: 1024px){
     .main_container{
-        padding: 50px;
+        padding: 100px;
     }
 
     .left_photo img{
@@ -481,9 +482,21 @@ h1{
 }
 
 @media (max-width: 812px){
+
+    /*header*/
+
+    .container_info h1{
+        font-size: 40px;
+    }
+
+    .main_info{
+        margin-top: -39px;
+    }
     #main_menu{
         display: none;
     }
+
+    /*body*/
 
     .main_about{
         display: grid;
@@ -491,9 +504,51 @@ h1{
         padding-top: 31px;
     }
 
+    /*SERVICES*/
+
     .main_services{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
         gap: 0;
     }
+
+
+    .main_services, #button_tile{
+        margin: auto;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .main_services .services_title h2{
+            display: none;
+    }
+
+    .main_services, .services_title{
+        text-align: center;
+    }
+
+    .main_services, .borda{
+        margin: auto;
+    }
+
+
+    .services_icone img{
+        max-width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .about_container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .about_budget, .about_container .borda, .img_sobre{
+        text-align: center;
+        margin: auto;
+    }
+
+    
 
    .text_title_sobre h1{
        text-align: center;
@@ -507,11 +562,11 @@ h1{
        margin: auto;
    }
 
-   
 
-   h1{
-       font-size: 18pt;
+   .services_title h1, .text_title_sobre h1{
+       font-size: 20pt;
    }
+
 
    
 
@@ -519,6 +574,8 @@ h1{
         display: grid;
         grid-template-columns: repeat(1,1fr);
    }
+
+   
 
    .widget_left, .widget_right{
        text-align: center;
@@ -546,13 +603,24 @@ h1{
       text-align: center;
   }
 
+  .button_more{
+    margin-top: 32px;
+  }
+
+  .button_radiuns{
+      text-align: center;
+  }
+
 }
 
 
 @media (max-width: 450px){
 
     /*CABEÇALHO */
-
+ 
+    .main_container{
+        padding: 30px;
+    }
     .main_info .container_info h1{
         font-size: 18pt;
     }
@@ -564,7 +632,7 @@ h1{
 
 
     .container_info h3{
-        font-size: 15px;
+        font-size: 8px;
     }
 
     /*BODY*/
@@ -580,6 +648,10 @@ h1{
         grid-template-columns: repeat(1,1fr);
     }
 
+    .services_icone img{
+        max-width: auto;
+    }
+
     .img_sobre img{
         max-width: 300px;
     }
@@ -590,7 +662,7 @@ h1{
         font-size: 13pt;
     }
     .services_title h1{
-        font-size: 20pt;
+        font-size: 17pt;
     }
 
     .services_title h2{
